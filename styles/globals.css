@@ -1,26 +1,37 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.light{
+  background:whitesmoke;
+  color:black;
+}
+.nigth{
+  background: black;
+  color: whitesmoke;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+html{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media(prefers-color-scheme:light){
+  .dark .light-scheme{
+    background: rgb(248, 232, 232);;
+    color: rgb(19, 16, 16);
   }
-  body {
-    color: white;
+  .light .light-scheme{
     background: black;
+    color: whitesmoke;
+  }
+}
+
+@media(prefers-color-scheme:dark){
+  .light .night-scheme{
+    background:rgb(23, 16, 16);
+    color: rgb(158, 143, 143);
+  }
+  .night .night-scheme{
+    background: black;
+    color: whitesmoke;
   }
 }
